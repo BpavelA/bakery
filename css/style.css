@@ -11,6 +11,7 @@
 
 body {
   background-color: #ffe2b0;
+  padding: 20px 0 20px 0;
 }
 
 header {
@@ -56,6 +57,7 @@ nav {
 }
 
 .section-image__block {
+  transition: .7s all;
   position: absolute;
   top: 54%;
   left: 50%;
@@ -67,6 +69,10 @@ nav {
     rgba(234, 156, 65, 0.8) 100%
   );
   padding-top: 15px;
+}
+
+.section-image__block:hover {
+  transform: translateY(-10px);
 }
 
 .section-image__border {
@@ -113,6 +119,7 @@ nav {
   font-size: 96px;
   font-family: Philosofer-Regular;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .section-desсription__text {
@@ -153,16 +160,20 @@ iframe {
   margin-bottom: 20px;
 }
 
-a:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+a {
+  display: inline-block;
+  transition: 0.3s all;
 }
 
-img {
+a:hover {
+  transform: scale(110%) rotate(10deg);
+  color: #7A4225;
+}
+
+.icon {
   transition: all 1s;
 }
 
-img:hover {
-  transform: scale(120%);
+.icon:hover {
+  transform: scale(110%);
 }
-
