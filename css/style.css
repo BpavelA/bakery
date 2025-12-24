@@ -9,39 +9,36 @@
   src: url(../fonts/Philosopher-Regular.ttf);
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: #ffe2b0;
-  padding: 20px 0 20px 0;
+  padding: 2rem 0 2rem 0;
 }
 
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 ul {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  margin-right: 100px;
-}
-
-li:last-child {
-  margin-right: 0;
+  gap: 10rem;
 }
 
 a {
   color: black;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 nav {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-family: Roboto, sans-serif;
   font-weight: 700;
 }
@@ -49,87 +46,94 @@ nav {
 .section-image {
   position: relative;
   background-image: url(../img/background_image.jpg);
-  height: 640px;
+  height: 64rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .section-image__block {
-  transition: .7s all;
+  transition: 0.7s all;
   position: absolute;
   top: 54%;
   left: 50%;
-  height: 190px;
-  width: 420px;
+  height: 19rem;
+  width: 42rem;
   background: linear-gradient(
     180deg,
     rgba(244, 213, 178, 0.8) 0%,
     rgba(234, 156, 65, 0.8) 100%
   );
-  padding-top: 15px;
+  padding-top: 1.5rem;
 }
 
 .section-image__block:hover {
-  transform: translateY(-10px);
+  transform: translateY(-1rem);
 }
 
 .section-image__border {
-  border: 1px solid black;
-  height: 160px;
-  width: 390px;
+  border: 0.1rem solid black;
+  height: 16rem;
+  width: 39rem;
   margin: 0 auto;
-  padding: 17px 28px 0 28px;
+  padding: 1.7rem 2.8rem 0 2.8rem;
 }
 
-.section-image__title {
-  font-size: 36px;
-  margin-bottom: 9px;
+.section-image__title,
+.block-adaptive__title {
+  font-size: 3.6rem;
+  margin-bottom: 0.9rem;
   font-family: Philosofer-Regular;
   font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.block-adaptive__title::marker {
+  content: none;
+}
+
+.section-image__title:hover,
+.block-adaptive__title:hover {
+  color: #f15b40;
 }
 
 .section-image__text {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: Roboto, sans-serif;
   font-weight: 500;
 }
 
 .section-description__icon-box {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.section-description__icon-box img {
-  margin-right: 76px;
-}
-
-.section-description__icon-box img:last-child {
-  margin-right: 0;
+  height: 29rem;
+  display: flex;
+  justify-content: center;
+  gap: 7.6rem;
+  margin-bottom: 2rem;
 }
 
 .section-description__text-box {
-  width: 1000px;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
 }
 
 .section-description__title {
-  font-size: 96px;
+  font-size: 9.6rem;
   font-family: Philosofer-Regular;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .section-desсription__text {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
 
 .section-description {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .red {
@@ -137,27 +141,27 @@ nav {
 }
 
 .section-map {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .section-map__line {
-  border-bottom: 1px solid #999999;
-  width: 1024px;
+  border-bottom: 0.1rem solid #999999;
+  width: 90%;
   margin: 0 auto;
 }
 
 .section-map__title {
-  font-size: 36px;
+  font-size: 3.6rem;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   font-family: Philosofer-Regular;
   font-weight: 700;
 }
 
 iframe {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 a {
@@ -167,7 +171,7 @@ a {
 
 a:hover {
   transform: scale(110%) rotate(10deg);
-  color: #7A4225;
+  color: #7a4225;
 }
 
 .icon {
@@ -175,5 +179,23 @@ a:hover {
 }
 
 .icon:hover {
-  transform: scale(110%);
+  transform: scale(105%);
+  filter: drop-shadow(-0.5rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5));
 }
+
+.block-adaptive {
+  display: none;
+  text-align: center;
+  border: 0.2rem dashed #f15b40;
+  width: 90%;
+  margin: 0 auto 2rem auto;
+}
+
+.block-adaptive__title:open > .block-adaptive__text {
+  font-size: 1.2rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+
