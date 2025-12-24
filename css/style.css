@@ -191,11 +191,9 @@ a:hover {
   margin: 0 auto 2rem auto;
 }
 
-.block-adaptive__title:open > .block-adaptive__text {
+.block-adaptive__text[open] {
   font-size: 1.2rem;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   padding-bottom: 2rem;
 }
-
-
