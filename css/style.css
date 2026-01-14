@@ -167,4 +167,5 @@ a:hover {
 
 .icon:hover {
   transform: scale(110%);
+  filter: drop-shadow(-0.5rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5));
 }
