@@ -54,7 +54,7 @@ nav {
 }
 
 .section-image__block {
-  transition: .7s all;
+  transition: 0.7s all;
   position: absolute;
   top: 54%;
   left: 50%;
@@ -80,14 +80,16 @@ nav {
   padding: 1.7rem 2.8rem 0 2.8rem;
 }
 
-.section-image__title {
+.section-image__title,
+.block-adaptive__title {
   font-size: 3.6rem;
-  margin-bottom: .9rem;
+  margin-bottom: 0.9rem;
   font-family: Philosofer-Regular;
   font-weight: 500;
 }
 
-.section-image__text {
+.section-image__text,
+.block-adaptive__text {
   font-size: 1.2rem;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -158,7 +160,7 @@ a {
 
 a:hover {
   transform: scale(110%) rotate(10deg);
-  color: #7A4225;
+  color: #7a4225;
 }
 
 .icon {
@@ -168,4 +170,16 @@ a:hover {
 .icon:hover {
   transform: scale(110%);
   filter: drop-shadow(-0.5rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5));
+}
+
+.block-adaptive {
+  display: none;
+  text-align: center;
+  width: 90%;
+  border: 0.2rem dashed #f15b40;
+  margin: 0 auto 2rem auto;
+}
+
+.block-adaptive__text[open] {
+  padding-bottom: 2rem;
 }
