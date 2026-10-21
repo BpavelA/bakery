@@ -1,29 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Самая лучшая пекарня в городе!">
- <link rel="stylesheet" href="styles/style.css">
- <title>Добрая пекарня!</title>
-</head>
-<body>
- <header>
-  <img src="icons/logo.svg" alt="Логотип пекарни"  class="logo">
-  <nav>
-   <ul>
-    <li><a class="nav_link" href="#">О нас</a></li>
-    <li><a class="nav_link" href="#">Новости</a></li>
-    <li><a class="nav_link" href="#">Меню</a></li>
-    <li><a class="nav_link" href="#">Контакты</a></li>
-   </ul>
-  </nav>
- </header>
- <main>
-  <section class="section-about"></section>
-  <section class="section-production"></section>
-  <section class="section-map"></section>
- </main>
- <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Самая лучшая пекарня в городе!" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Добрая пекарня!</title>
+  </head>
+  <body>
+    <header>
+      <img src="icons/logo.svg" alt="Логотип пекарни" class="logo" />
+      <nav>
+        <ul>
+          <li><a class="nav_link" href="#">О нас</a></li>
+          <li><a class="nav_link" href="#">Новости</a></li>
+          <li><a class="nav_link" href="#">Меню</a></li>
+          <li><a class="nav_link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-about">
+        <div class="section-about__block">
+          <div class="section-about__border">
+            <h2 class="section-about__title">Специальный заказ</h2>
+            <p class="section-about__text">
+              Идейные соображения высшего порядка, а также рамки и место
+              обучения кадров позволяет оценить значение существенных финансовых
+              и административных условий. обучения кадров позволяет оценить
+              значение существенных финансовых и административных условий.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-production">
+        <div class="icons">
+          <img src="icons/icon1.svg" alt="" class="icon" />
+          <img src="icons/icon3.svg" alt="" class="icon" />
+          <img src="icons/icon2.svg" alt="" class="icon" />
+        </div>
+        <h2 class="section-production__title">
+          Выпечка - <span class="red">это</span> вкусно!
+        </h2>
+        <p class="section-production__text">
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров позволяет оценить значение существенных финансовых и
+          административных условий. Разнообразный и богатый опыт новая модель
+          организационной деятельности играет важную роль в формировании форм
+          развития. Товарищи! постоянный количественный рост и сфера нашей
+          активности играет важную роль в формировании новых предложений.
+        </p>
+      </section>
+      <section class="section-map">
+        <h3 class="section-map__title">Заказать</h3>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=40.970229%2C57.017316&mode=search&oid=104444596390&ol=biz&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=16.65"
+          width="1000"
+          height="450"
+          frameborder="0"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <div class="hr"></div>
+    </footer>
+  </body>
 </html>
